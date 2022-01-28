@@ -174,9 +174,9 @@ git clone https://github.com/gssabu/linorobot
 git clone https://github.com/linorobot/imu_calib.git
 git clone https://github.com/linorobot/lino_pid.git
 git clone https://github.com/linorobot/lino_udev.git
+git clone https://github.com/linorobot/lino_msgs.git
 
 cd $HOME/linorobot_ws/src/linorobot
-git checkout patch-2
 TRAVIS_BRANCH="echo $TRAVIS_BRANCH"
 if [ "$TRAVIS_BRANCH" = "devel" ]; then git checkout devel; fi
 
@@ -190,6 +190,7 @@ echo "export LINOBASE=$BASE" >> $HOME/.bashrc
 source $HOME/.bashrc
 
 cd $HOME/linorobot_ws
+catkin_make --pkg lino_msgs
 catkin_make
 
 echo
