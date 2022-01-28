@@ -174,7 +174,6 @@ git clone https://github.com/gssabu/linorobot
 git clone https://github.com/linorobot/imu_calib.git
 git clone https://github.com/linorobot/lino_pid.git
 git clone https://github.com/linorobot/lino_udev.git
-git clone https://github.com/linorobot/lino_msgs.git
 
 cd $HOME/linorobot_ws/src/linorobot
 TRAVIS_BRANCH="echo $TRAVIS_BRANCH"
